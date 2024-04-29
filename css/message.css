@@ -2,17 +2,20 @@
 .MB{
     display: none;
 }
-/* ABOUT共通フォントサイズ */
+
 h4{
     font-size: 20px;
     font-weight: bold;
     display: block;
-    width: 250px;
+    white-space: nowrap;
 }
 
-h4 span{
-    font-weight: normal;
-    white-space: nowrap;
+.basic-informations{
+    margin-top: 2.5rem;
+    padding-left: 100px;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
 }
 
 /* 追従エントリーボタン */
@@ -105,8 +108,6 @@ h4 span{
     background-color: var(--yellow);
 }
 
-
-
 /* コンテンツTOPタイトル */
 
 .Group-profile-table{
@@ -138,82 +139,45 @@ h4 span{
     line-height: 0.8;
 
 }
-
-/* 基本情報　表 */
- /* 表で使用するテキストサイズ */
-.basic-info-tittle{
-    font-weight: bold;
-    width: 8rem;
-    padding-left: 3rem;
-}
-
-.info-p{
-    font-weight: 500;
-}
-
-.small-text{
-    font-size: 13px;
-}
-.tel-fax{
-    font-size: 15px;
-    display: inline-block;
-    margin-top: 2rem;
-}
-
-
-/* ----------------------------- */
+/* 責任者メッセージ */
 .basic-informations{
-    margin-top: 2.5rem;
-    padding-left: 100px;
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    text-align: left;
-}
-
-.basic-informations:nth-of-type(n+2){
-    margin-top: 6.25rem;
-}
-
-.basic-informations:last-of-type{
     border-bottom: solid 0.5px var(--gray);
     padding-bottom: 7.5rem;
 }
 
-.basic-information{
-    flex-grow: 2;
-}
-
-.basic-info{
-    display: flex;
-    border-bottom: solid 0.5px var(--gray);
-    padding: 1.2rem 0;
-}
-
-.basic-info:nth-child(n+2){
-    margin-top: 1.8rem;
-}
-
-.basic-info:last-of-type{
-    border-bottom: none;
+.basic-informations h4::after{
+    content: " ";
+    display: block;
+    width: 330px;
+    height: 10px;
+    background-color: var(--yellow);
+    border-radius: 5px;
 }
 
 .basic-info-cont{
-    margin-left: 2rem;
-    position: relative;
+    margin-top: 50px;
+}
+.okada-message{
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 65px;
 }
 
-.basic-info-cont p{
-    margin-top: 2.5rem;
+.okada-message img{
+    width: 327px;
+    box-shadow:5px 5px 0px 0px rgba(250,214,11,0.3);
+    border-radius: 5px;
 }
 
-.position1{
-    position: absolute;
-    bottom: -10%;
-    right: 0;
-    width: 10rem;
+.okada-message h3{
+    margin-top: 26px;
+    margin-bottom: -5px;
 }
 
+.okada-name{
+    font-size: 0.75rem;
+}
 
 
 /* ABOUTページ遷移（共通） */
@@ -258,9 +222,6 @@ ABOUT スマホ
 }
 .PC{
     display: none;
-}
-h4{
-    font-size: 18px;
 }
 
 /* 追従エントリーボタン */
@@ -363,6 +324,7 @@ h4{
     background-color: var(--yellow);
 } */
 
+
 /* コンテンツTOPタイトル */
 
 .Group-profile-table{
@@ -396,107 +358,59 @@ h4{
     line-height: 0.8;
 } */
 
-/* 基本情報　表 */
- /* 表で使用するテキストサイズ */
+/* 責任者メッセージ */
 
-h4{
-    font-size: 1.1rem;
-}
-.basic-info-tittle{
-    /* font-weight: bold; */
-    width: 5.5rem;
-    padding-left: 0.6rem;
-    font-size: 0.8rem;
-    height:max-content;
-    vertical-align: bottom;
-}
-
-.bit-buttom{
-    position: absolute;
-    bottom: 9%;
-    text-align: right;
-    
-}
-
-.info-p{
-    font-weight: 500;
-    font-size: 0.8rem;
-    
-}
-
-.info-p .MB{
-    padding-left:1em;
-	text-indent:-1em;
-}
-
-.small-text{
-    font-size: 0.6rem;
-}
-.tel-fax{
-    font-size: 0.7rem;
-    /* display: inline-block;
-    margin-top: 2rem; */
-}
-
-
-/* ----------------------------- */
 .basic-informations{
     margin-top: 2.5rem;
     padding-left: 0.6px;
     display: block;
     /* border-bottom: solid 0.5px var(--gray);
     width: 100%; */
-}
-
-.basic-informations:nth-of-type(n+2){
-    margin-top: 3.7rem;
+    padding-bottom: 2rem;
 }
 
 .basic-informations h4{
-    /* width: 140px; */
+    font-size: 18px;
 }
 
-/* .basic-information{
-    flex-grow: 2;
-} */
-
-.basic-info{
-    display: flex;
-    border-bottom: solid 0.5px var(--gray);
-    padding: 1.2rem 0;
-    position: relative;
-}
-
-.basic-info:nth-child(n+2){
-    margin-top: 3.7rem;
-}
-
-.basic-info:last-of-type{
-    border-bottom: none;
+.basic-informations h4::after{
+    /* content: " ";
+    display: block; */
+    width: 280px;
+    height: 9px;
+    /* background-color: var(--yellow);
+    border-radius: 5px; */
 }
 
 .basic-info-cont{
-    position:relative;
-    margin-left: 0rem;
-    margin-top: 1.5rem;
-}
-
-.position1{
-    width: 120px;
-}
-
-.position2{
-    position: absolute;
-    bottom: 40%;
-    right: -40%;
-    width: 17.5rem;
+    margin-top: 25px;
 }
 
 .basic-info-cont p{
-    margin-top:25px;
-    font-size: 0.87rem;
+    font-size: 14px;
 }
 
+.okada-message{
+    /* width: 100%;
+    text-align: center;
+    border-radius: 5px; */
+    margin-top: 50px;
+}
+
+.okada-message img{
+    width: 327px;
+    box-shadow:5px 5px 0px 0px rgba(250,214,11,0.3);
+    border-radius: 5px;
+}
+
+.okada-message h3{
+    margin-top: 26px;
+    margin-bottom: -5px;
+}
+
+.okada-name{
+    font-size: 0.6rem;
+}
 
 
 /* ABOUTページ遷移（共通） */
