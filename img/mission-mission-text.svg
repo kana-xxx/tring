@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="106" viewBox="0 0 400 106">
+  <defs>
+    <filter id="きっかけをつくり_成長の輪_" x="0" y="0" width="264" height="106" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.059"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="を_広げる_" x="227" y="60" width="173" height="46" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.059"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_9416" data-name="グループ 9416" transform="translate(-806 -1419.999)">
+    <g transform="matrix(1, 0, 0, 1, 806, 1420)" filter="url(#きっかけをつくり_成長の輪_)">
+      <text id="きっかけをつくり_成長の輪_2" data-name="きっかけをつくり、
+&quot;成長の輪&quot; " transform="translate(0 34)" font-size="32" font-family="VDL-GigaMaru-Medium, VDL-GigaMaru" font-weight="500"><tspan x="0" y="0">きっかけ</tspan><tspan y="0" font-size="25">をつくり、</tspan><tspan font-size="48"><tspan x="0" y="58" letter-spacing="0.013em">&quot;</tspan><tspan y="58" fill="#f9584d" letter-spacing="0.013em">成長</tspan><tspan y="58" fill="#f9584d" font-size="32" letter-spacing="0.013em">の</tspan><tspan y="58" fill="#f9584d" letter-spacing="0.013em">輪</tspan><tspan y="58" letter-spacing="0.013em">&quot;</tspan><tspan y="58" font-size="32"> </tspan></tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 806, 1420)" filter="url(#を_広げる_)">
+      <text id="を_広げる_2" data-name="を 広げる。" transform="translate(227 94)" font-size="25" font-family="VDL-GigaMaru-Medium, VDL-GigaMaru" font-weight="500"><tspan x="0" y="0">を </tspan><tspan y="0" font-size="32">広げる。</tspan></text>
+    </g>
+  </g>
+</svg>

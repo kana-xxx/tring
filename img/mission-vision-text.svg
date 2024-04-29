@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="415" height="106" viewBox="0 0 415 106">
+  <defs>
+    <filter id="世の中を_真っ当な_ハタラク_で" x="0" y="0" width="279" height="106" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.059"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="満たす_" x="276" y="58" width="139" height="46" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.059"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_9421" data-name="グループ 9421" transform="translate(-578 -1118)">
+    <g transform="matrix(1, 0, 0, 1, 578, 1118)" filter="url(#世の中を_真っ当な_ハタラク_で)">
+      <text id="世の中を_真っ当な_ハタラク_で-2" data-name="世の中を、真っ当な
+&quot;ハタラク&quot; で" transform="translate(0 34)" font-size="32" font-family="VDL-GigaMaru-Medium, VDL-GigaMaru" font-weight="500"><tspan x="0" y="0">世の中</tspan><tspan y="0" font-size="25">を、</tspan><tspan y="0">真っ当</tspan><tspan y="0" font-size="25">な</tspan><tspan font-size="48"><tspan x="0" y="58" letter-spacing="0.013em">&quot;</tspan><tspan y="58" fill="#f9584d" letter-spacing="0.013em">ハタラク</tspan><tspan y="58" letter-spacing="0.013em">&quot;</tspan><tspan y="58" font-size="32"> </tspan><tspan y="58" font-size="25">で</tspan></tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 578, 1118)" filter="url(#満たす_)">
+      <text id="満たす_2" data-name="満たす。" transform="translate(276 92)" font-size="32" font-family="VDL-GigaMaru-Medium, VDL-GigaMaru" font-weight="500"><tspan x="0" y="0">満たす。</tspan></text>
+    </g>
+  </g>
+</svg>
