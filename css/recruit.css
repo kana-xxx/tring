@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+/* コンテンツTOPタイトル */
+.cont-top-tittles h4{
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+.cont-top-tittles{
+    border-bottom: solid 0.5px var(--gray);
+    padding-bottom: 45px;
+}
+.cont-top-tittle{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(50% ,50%);
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: var(--gray);
+    color: rgba(0,0,0,0);
+    z-index: -2;
+}
+
+/* ----------------------------- */
+.basic-informations{
+    margin-top: 6rem;
+    padding-left: 140px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: solid 0.5px var(--gray);
+    width: 100%;
+    position: relative;
+}
+
+.basic-informations img{
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    width: 540px;
+}
+
+.basic-informations h5{
+    font-size: 20px;
+    font-weight: bold;
+}
+.basic-informations h5::after{
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 10px;
+    background-color: var(--yellow);
+    border-radius: 5px;
+}
+
+.basic-information{
+    flex-grow: 2;
+    margin-left: 60px;
+}
+
+.basic-info{
+    display: flex;
+    border-bottom: solid 0.5px var(--gray);
+    padding-bottom: 2rem ;
+}
+
+
+
+.basic-info:nth-child(n+2){
+    padding-top: 2rem;
+
+}
+
+.basic-info:last-of-type{
+    border-bottom: none;
+    width: 100%;
+}
+
+.basic-info-cont{
+    margin-left: 2rem;
+}
+
+.basic-info-cont:last-of-type{
+    margin-left: 0rem;
+}
+
+.flow img{
+    margin-top: 3rem;
+    margin: 0 auto;
+}
+.flows{
+    width: 100%;
+    margin-top: 65px;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.flows > img{
+    width: 40px;
+}
+
+.flow{
+    width: 215px;
+    height: 231px;
+    background-color: var(--white);
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 40px 0px;
+
+    
+}
+.flow h3{
+    display: inline-block;
+}
+
+.flow img{
+    display: inline-block;
+    width: 60px;
+}
+.flow-info{
+    padding: 60px 200px;
+    background: url("../img/about-recruit-entryback-img.png");
+    background-size: 100%;
+}
+
+.flow-info h5{
+    font-size: 20px;
+    color: var(--white);
+    width: 110px;
+}
+
+.flow-info h5::after{
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 10px;
+    background-color: var(--yellow);
+    border-radius: 5px;
+}
+.entry-pop{
+    width: 100%;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.entry-poptext{
+    font-size: 20px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.entry-pop-btn{
+    display: inline-block;
+    width: 207px;
+    height: 90px;
+    line-height:90px;
+    color: var(--white);
+    background-color: rgba(46,196,206,0.8);
+    font-family: "Source Code Pro", monospace;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 27px;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 0.25rem;
+}
+
+
+
+@media (hover: hover) {
+    .entry-pop-btn:hover{
+        opacity: 0.5;
+    }
+}
+
+/* ABOUTページ遷移（共通） */
+.about-pagelinks{
+    margin: 5rem 100px 0px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap:5rem;
+    justify-content: space-between;
+    /* text-align: center; */
+    border-top: solid 0.5px var(--gray);
+    padding: 0;
+    padding-top: 80px;
+
+}
+
+
+
+/* ------------------
+ABOUT スマホ 
+---------------------*/
+
+@media screen and (max-width: 767px){
+    .cont-top-tittles h4{
+        margin-top: 37px;
+        font-size: 14px;
+    }
+
+    .cont-top-tittles {
+        padding-left: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .cont-top-tittle{
+        transform: translate(0% ,50%);
+        border-bottom: none;
+    }
+/* ----------------------------- */
+.basic-informations{
+    margin-top: 60px;
+    padding-left: 0.6px;
+    display: block;
+    /* border-bottom: solid 0.5px var(--gray);
+    width: 100%; */
+    position: relative;
+}
+
+.basic-informations h5{
+    /* width: 140px; */
+    font-size: 14px;
+}
+
+
+.basic-informations h5::after{
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 10px;
+    background-color: var(--yellow);
+    border-radius: 5px;
+}
+.basic-informations img{
+    position: absolute;
+    top:20%;
+    left: 50%;
+    width: 600px;
+    
+} 
+
+.basic-information{
+    /* flex-grow: 2; */
+    margin-left: 0px;
+    margin-top: 40px;
+}
+
+
+.basic-info{
+    display: flex;
+    border-bottom: solid 0.5px var(--gray);
+    padding: 1.2rem 0;
+    position: relative;
+}
+
+.basic-info:nth-child(n+2){
+    margin-top: 1.8rem;
+}
+
+.basic-info:last-of-type{
+    border-bottom: none;
+}
+
+.basic-info-cont{
+    margin-left: 2rem;
+}
+
+.basic-info-cont img{
+    /* margin-left:-5% ; */
+
+}
+
+.basic-info-cont iframe{
+    width:14rem;
+    height: 9.8rem;
+    margin-top: 1.25rem;
+}
+
+
+/* 選考フロー */
+.flow-info{
+    padding: 35px 30px 170px;
+    background: url("../img/about-recruit-entrybackMB-img.png");
+    
+    background-size: 100%;
+}
+
+
+.flow-info h5{
+    font-size: 14px;
+}
+
+.flow-info h5::after{
+    content: " ";
+    display: block;
+    width: 80px;
+    height: 10px;
+    background-color: var(--yellow);
+    border-radius: 5px;
+}
+.flows > img{
+    margin-top: 0;
+    transform: rotate(90deg);
+    width: 15px;
+}
+
+
+.flows{
+    width: 100%;
+    margin-top: 65px;
+    display: flex;
+    gap: 20px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+.flow{
+    width: 100%;
+    height: 150px;
+    padding: 25px 0;
+}
+
+.flow img{
+    margin-top: 10px;
+    width: 40px;
+}
+
+.entry-poptext{
+    font-size: 16px;
+}
+
+/* ABOUTページ遷移（共通） */
+.about-pagelinks{
+    margin: 5rem 10px 0px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap:5rem;
+    justify-content: space-between;
+    /* text-align: center; */
+    border-top: solid 0.5px var(--gray);
+    padding: 0;
+    padding-top: 80px;
+}
+
+
+
+
+}
+/*↑ スマホレスポンシブ閉じ */

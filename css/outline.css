@@ -1,163 +1,10 @@
 @charset "UTF-8";
-.MB{
-    display: none;
-}
-/* ABOUT共通フォントサイズ */
-h4{
-    font-size: 22px;
-    font-weight: bold;
-}
-
-/* 追従エントリーボタン */
-.entry-btn{
-    position: fixed;
-    bottom: 4%;
-    right: 8%;
-    display: inline-block;
-    width: 95px;
-    height: 95px;
-    background-color: var(--red);
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.25);
-    z-index: 1000;
-}
-
-.entry-btn:hover{
-    scale: 1.1;
-}
-
-.entry-btn img{
-    width: 50px;
-    vertical-align: middle;
-    margin-top: 6px;
-}
-
-/* about us 位置調整 */
-.cont-h-outers{
-    height: 268px;
-    position: relative;
-}
-.cont-h {
-    width: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    position: relative;
-}
-.cont-h-outer.cont-h-sec-about {
-    position: absolute;
-    bottom: 50%;
-    left: 8%;
-}
-
-.cont-h-inner-about {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
-    font-style: italic;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.cont-h-inner-about h1 {
-    font-size: 64px;
-    font-weight: bold;
-    line-height: 0.8;
-}
-
-/* about タブ設定 */
-
-.aboutTab{
-    margin-top: 20%;
-}
-
-.aboutTabLists{
-    display: flex;
-    padding-bottom: 2.9rem;
-    border-bottom: solid 3.5px var(--yellow);
-    justify-content: space-between;
-}
-
-.aboutTab{
-    display: inline-block;
-    width: 16rem;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 500;
-    padding: 15px 30px;
-    border: solid 1px var(--yellow);
-    border-radius: 2.5rem;
-    background-color: #fff;
-    
-}
-
-.is-active{
-    background-color: var(--yellow);
-}
-
-
-
-/* コンテンツTOPタイトル */
-
-.Group-profile-table{
-    padding: 0 100px 
-}
-
-.cont-top-tittles {
-    position: relative;
-    margin-top: 5rem;
-    margin-left: 100px;
-}
-
-.cont-top-tittle{
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    font-size: 3rem;
-    font-weight: bold;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: var(--gray);
-    color: rgba(0,0,0,0);
-}
-
-.cont-top-tittles-inner {
-    transform: translateY(-50%);
-}
-
-.cont-top-tittles-inner h3 {
-    line-height: 0.8;
-
-}
-
-/* 基本情報　表 */
- /* 表で使用するテキストサイズ */
-.basic-info-tittle{
-    font-weight: bold;
-    width: 8rem;
-    padding-left: 3rem;
-}
-
-.info-p{
-    font-weight: 500;
-}
-
-.small-text{
-    font-size: 13px;
-}
-.tel-fax{
-    font-size: 15px;
-    display: inline-block;
-    margin-top: 2rem;
-}
 
 
 /* ----------------------------- */
 .basic-informations{
     margin-top: 3rem;
-    padding-left: 100px;
+    padding-left: 140px;
     display: flex;
     justify-content: flex-start;
     border-bottom: solid 0.5px var(--gray);
@@ -175,7 +22,12 @@ h4{
 .basic-info{
     display: flex;
     border-bottom: solid 0.5px var(--gray);
-    padding: 1.2rem 0;
+    padding-bottom: 30px;
+    
+}
+
+.basic-info:first-child{
+    padding-top: 8px;
 }
 
 .basic-info:nth-child(n+2){
@@ -204,225 +56,12 @@ h4{
     margin-top: 3rem;
 }
 
-/* ABOUTページ遷移（共通） */
-.about-pagelinks{
-    margin-top: 5rem;
-    display: flex;
-    flex-wrap: wrap; 
-    gap:5rem;
-    justify-content: space-between;
-    padding: 0 100px;
-    text-align: center;
-}
-
-.about-pagelink{
-    width: 410px;
-    height: 244px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 5px;
-}
-.about-pagelink img:hover{
-    scale: 1.1;
-    
-}
-
-
-.pagelink-text{
-    position: absolute;
-    bottom: 10%;
-    left: 8%;
-    color: #fff;
-    z-index: 10;
-    font-weight: bold;
-    font-size: 1.06rem;
-}
 
 /* ------------------
 ABOUT スマホ 
 ---------------------*/
 
 @media screen and (max-width: 767px){
-.MB{
-    display: block;
-}
-.PC{
-    display: none;
-}
-
-/* 追従エントリーボタン */
-.entry-btn{
-    /* position: fixed; */
-    bottom: 8%;
-    right: 25%;
-    /* display: inline-block; */
-    width: 70px;
-    height: 70px;
-    /* background-color: var(--red);
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.25);
-    z-index: 1000; */
-}
-
-/* .entry-btn:hover{
-    scale: 1.1;
-} */
-
-.entry-btn img{
-    width: 40px;
-    /* vertical-align: middle;
-    margin-top: 6px; */
-}
-
-    /* about us 位置調整 */
-.cont-h-outers{
-    height: 120px;
-    /* position: relative; */
-}
-/* .cont-h {
-    width: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    position: relative;
-} */
-.cont-h-outer.cont-h-sec-about {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.cont-h-bg{
-    font-size: 4.6rem;
-}
-/* 
-.cont-h-inner-about {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
-    font-style: italic;
-    text-align: center;
-    white-space: nowrap;
-} */
-
-.cont-h-inner-about h1 {
-    font-size: 1.6rem;
-    margin-bottom: -5px;
-    margin-top: -5px;
-    /* font-weight: bold;
-    line-height: 0.8; */
-}
-.cont-h-inner-about span{
-    font-size: .6rem;
-}
-
-/* about タブ設定 */
-.aboutTab{
-    margin-top: 1rem;
-}
-
-.aboutTabLists{
-    /* display: flex; */
-    flex-wrap: wrap; 
-    padding-bottom: 2.5rem;
-    /* border-bottom: solid 3.5px var(--yellow);
-    justify-content: space-between; */
-}
-
-.aboutTab{
-    display: inline-block;
-    width: 9.6rem;
-    /* text-align: center; */
-    font-size: .9rem;
-    /* font-weight: 500; */
-    padding: 0.5rem 0rem ;
-    /* border: solid 1px var(--yellow);
-    border-radius: 2.5rem;
-    background-color: #fff; */
-    
-}
-
-/* .is-active{
-    background-color: var(--yellow);
-} */
-
-/* コンテンツTOPタイトル */
-
-.Group-profile-table{
-    padding: 0px ;
-}
-
-.cont-top-tittles {
-    /* position: relative;
-    margin-top: 5rem; */
-    margin-left: 0px;
-}
-
-.cont-top-tittle{
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform:translateX(-50%) ;
-    font-size: 1.8rem;
-    /* font-weight: bold;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: var(--gray);
-    color: rgba(0,0,0,0); */
-}
-
-/* .cont-top-tittles-inner {
-    transform: translateY(-50%);
-}
-
-.cont-top-tittles-inner h3 {
-    line-height: 0.8;
-} */
-
-/* 基本情報　表 */
- /* 表で使用するテキストサイズ */
-
-h4{
-    font-size: 1.1rem;
-}
-.basic-info-tittle{
-    /* font-weight: bold; */
-    width: 5.5rem;
-    padding-left: 0.6rem;
-    font-size: 0.8rem;
-    height:max-content;
-    vertical-align: bottom;
-}
-
-.bit-buttom{
-    position: absolute;
-    bottom: 9%;
-    text-align: right;
-    
-}
-
-.info-p{
-    font-weight: 500;
-    font-size: 0.8rem;
-    
-}
-
-.info-p .MB{
-    padding-left:1em;
-	text-indent:-1em;
-}
-
-.small-text{
-    font-size: 0.6rem;
-}
-.tel-fax{
-    font-size: 0.7rem;
-    /* display: inline-block;
-    margin-top: 2rem; */
-}
 
 
 /* ----------------------------- */
@@ -430,12 +69,14 @@ h4{
     margin-top: 3rem;
     padding-left: 0.6px;
     display: block;
-    /* border-bottom: solid 0.5px var(--gray);
+    border-bottom: solid 0.5px var(--gray);
+    /* 
     width: 100%; */
 }
 
 .basic-informations h4{
     /* width: 140px; */
+    padding-left: 10px;
 }
 
 /* .basic-information{
@@ -447,6 +88,7 @@ h4{
     border-bottom: solid 0.5px var(--gray);
     padding: 1.2rem 0;
     position: relative;
+    text-align: left;
 }
 
 .basic-info:nth-child(n+2){
@@ -462,7 +104,7 @@ h4{
 }
 
 .basic-info-cont img{
-    /* margin-left:-5% ; */
+    margin-left:-20% ;
 
 }
 
@@ -476,34 +118,6 @@ h4{
     margin-top: 1.8rem;
 }
 
-/* ABOUTページ遷移（共通） */
-.about-pagelinks{
-    margin-top: 3.7rem;
-    /* display: flex; */
-    flex-flow: column;
-    padding: 0px;
-    gap:2rem;
-    /* text-align: center; */
-}
-
-.about-pagelink{
-    width: 310px;
-    height: 185px;
-    /* overflow: hidden;
-    position: relative;
-    border-radius: 5px; */
-    margin: 0 auto;
-}
-
-.pagelink-text{
-    /* position: absolute;
-    bottom: 10%;
-    left: 8%;
-    color: #fff;
-    z-index: 10; */
-    /* font-weight: bold; */
-    font-size: 0.8rem;
-}
 
 
 }
