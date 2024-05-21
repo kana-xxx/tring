@@ -24,3 +24,5 @@ ham.addEventListener('click', ()=> {
     hamMenu.classList.toggle("is-active");
     hamBG.classList.toggle("is-active");
 })
+
+// footer　hoverアニメーション
