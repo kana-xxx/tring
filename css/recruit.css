@@ -1,26 +1,25 @@
 @charset "UTF-8";
 
-/* コンテンツTOPタイトル */
+/* コンテンツTOPタイトル⇒日本語＋英語のふちデザイン */
 .cont-top-tittles h4{
     margin-top: 20px;
     font-size: 20px;
-    
 }
 .cont-top-tittles{
     border-bottom: solid 0.5px var(--gray);
     padding-bottom: 45px;
 }
 .cont-top-tittle{
-    position: absolute;
+    /* position: absolute;
     top: 0%;
-    left: 0%;
+    left: 0%; */
     transform: translate(50% ,50%);
-    font-size: 50px;
-    font-weight: bold;
-    -webkit-text-stroke-width: .5px;
+    /* font-size: 50px;
+    font-weight: bold; */
+    /* -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: var(--gray);
     color: rgba(0,0,0,0);
-    z-index: -2;
+    z-index: -2; */
 }
 
 /* ----------------------------- */
@@ -34,25 +33,22 @@
     position: relative;
 }
 
-.basic-informations img{
+.basic-info-img{
     position: absolute;
-    top: -5%;
+    top: -40%;
     left: 50%;
-    width: 540px;
+    width: 750px;
+}
+
+.basic-info-img img{
+    width: 100%;
 }
 
 .basic-informations h5{
     font-size: 20px;
     font-weight: bold;
 }
-.basic-informations h5::after{
-    content: " ";
-    display: block;
-    width: 150px;
-    height: 10px;
-    background-color: var(--yellow);
-    border-radius: 5px;
-}
+
 
 .basic-information{
     flex-grow: 2;
@@ -93,8 +89,8 @@
     width: 100%;
     margin-top: 65px;
     display: flex;
-    gap: 60px;
-    justify-content: space-between;
+    gap: 80px;
+    justify-content: center;
 }
 
 .flows > img{
@@ -124,24 +120,16 @@
     width: 60px;
 }
 .flow-info{
-    padding: 60px 200px;
+    padding: 60px 200px 120px;
     background: url("../img/about-recruit-entryback-img.png");
     background-size: 100%;
+    background-position-y: bottom;
 }
 
 .flow-info h5{
     font-size: 20px;
     color: var(--white);
     width: 110px;
-}
-
-.flow-info h5::after{
-    content: " ";
-    display: block;
-    width: 120px;
-    height: 10px;
-    background-color: var(--yellow);
-    border-radius: 5px;
 }
 .entry-pop{
     width: 100%;
@@ -171,7 +159,20 @@
     letter-spacing: 0.25rem;
 }
 
+/* ABOUTページ遷移（共通） */
+.about-pagelinks{
+    margin: 5rem 100px 0rem;
+    /* margin: 5rem 100px 0px; */
+    /* display: flex;
+    flex-wrap: wrap; 
+    gap:5rem; */
+    /* justify-content: space-around; */
+    /* text-align: center; */
+    border-top: solid 0.5px var(--gray);
+    /* padding: 0 100px 100px; */
+    padding-top: 80px;
 
+}
 
 @media (hover: hover) {
     .entry-pop-btn:hover{
@@ -179,19 +180,7 @@
     }
 }
 
-/* ABOUTページ遷移（共通） */
-.about-pagelinks{
-    margin: 5rem 100px 0px;
-    display: flex;
-    flex-wrap: wrap; 
-    gap:5rem;
-    justify-content: space-between;
-    /* text-align: center; */
-    border-top: solid 0.5px var(--gray);
-    padding: 0;
-    padding-top: 80px;
 
-}
 
 
 
@@ -200,6 +189,11 @@ ABOUT スマホ
 ---------------------*/
 
 @media screen and (max-width: 767px){
+
+    .top-page{
+        overflow-x: hidden;
+    }
+
     .cont-top-tittles h4{
         margin-top: 37px;
         font-size: 14px;
@@ -212,7 +206,7 @@ ABOUT スマホ
     }
 
     .cont-top-tittle{
-        transform: translate(0% ,50%);
+        transform: translate(0% ,75%);
         border-bottom: none;
     }
 /* ----------------------------- */
@@ -230,27 +224,21 @@ ABOUT スマホ
     font-size: 14px;
 }
 
-
-.basic-informations h5::after{
-    content: " ";
-    display: block;
-    width: 100px;
-    height: 10px;
-    background-color: var(--yellow);
-    border-radius: 5px;
-}
-.basic-informations img{
+.basic-info-img{
     position: absolute;
-    top:20%;
-    left: 50%;
-    width: 600px;
-    
-} 
-
+    top:0%;
+    left: 30%;
+    width: 650px;
+}
 .basic-information{
-    /* flex-grow: 2; */
+    flex-grow: 1;
     margin-left: 0px;
     margin-top: 40px;
+    width: 100%;
+}
+
+.basic-informations img{
+    width: 100%;
 }
 
 
@@ -259,6 +247,7 @@ ABOUT スマホ
     border-bottom: solid 0.5px var(--gray);
     padding: 1.2rem 0;
     position: relative;
+    width: 100%;
 }
 
 .basic-info:nth-child(n+2){
@@ -271,6 +260,7 @@ ABOUT スマホ
 
 .basic-info-cont{
     margin-left: 2rem;
+    display: block;
 }
 
 .basic-info-cont img{
@@ -296,15 +286,6 @@ ABOUT スマホ
 
 .flow-info h5{
     font-size: 14px;
-}
-
-.flow-info h5::after{
-    content: " ";
-    display: block;
-    width: 80px;
-    height: 10px;
-    background-color: var(--yellow);
-    border-radius: 5px;
 }
 .flows > img{
     margin-top: 0;
@@ -338,17 +319,22 @@ ABOUT スマホ
     font-size: 16px;
 }
 
+.entry-pop{
+    /* width: 100%;
+    text-align: center; */
+    margin-top: 70px;
+}
+
 /* ABOUTページ遷移（共通） */
 .about-pagelinks{
-    margin: 5rem 10px 0px;
+    margin: 5rem 0px 0px;
     display: flex;
     flex-wrap: wrap; 
-    gap:5rem;
     justify-content: space-between;
     /* text-align: center; */
     border-top: solid 0.5px var(--gray);
-    padding: 0;
-    padding-top: 80px;
+    padding: 80px 0px 70px;
+
 }
 
 

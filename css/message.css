@@ -9,6 +9,7 @@
 }
 .basic-informations h4{
     font-size: 20px;
+    margin-top: 60px;
 }
 
 
@@ -64,6 +65,7 @@ ABOUT スマホ
 
 .basic-informations h4{
     font-size: 18px;
+    margin-top: 40px;
 }
 
 .basic-informations h4::after{
@@ -88,7 +90,7 @@ ABOUT スマホ
     /* width: 100%;
     text-align: center;
     border-radius: 5px; */
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .okada-message img{

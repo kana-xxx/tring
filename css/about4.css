@@ -1,4 +1,10 @@
 @charset "UTF-8";
+p{
+    line-height: 1.7;
+}
+.top-page{
+    overflow-x: hidden;
+}
 
 .MB{
     display: none;
@@ -27,26 +33,33 @@ h4{
 
 
 .entry-btn img{
-    width: 50px;
+    width: 55px;
     vertical-align: middle;
     margin-top: 6px;
 }
 
-/* about us 位置調整 */
+/* about us 学生団体「TRing」についての位置調整 */
 .cont-h-outers{
-    height: 268px;
+    height: 100px;
     position: relative;
 }
 .cont-h {
+    height: auto; /* style.cssから変更した設定 */
     width: 100%;
     position: absolute;
     top: 0%;
     left: 0%;
     position: relative;
 }
+
+.cont-h img {
+    width: 100%;
+    margin-top: -150px;
+}
+
 .cont-h-outer.cont-h-sec-about {
     position: absolute;
-    bottom: 50%;
+    bottom: -30%;
     left: 8%;
 }
 
@@ -67,30 +80,31 @@ h4{
     line-height: 0.8;
 }
 
-/* about タブ設定 */
-
-.aboutTab{
-    margin-top: 20%;
+/* about タブ５つ設定 */
+.content-second{
+    margin-top: 0px;
+    padding: 0 100px ;
 }
 
 .aboutTabLists{
     display: flex;
-    padding-bottom: 2.9rem;
+    padding-bottom: 2rem;
     border-bottom: solid 3.5px var(--yellow);
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 
 .aboutTab{
     display: inline-block;
-    width: 16rem;
+    width: 15rem;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 500;
     padding: 15px 30px;
     border: solid 1px var(--yellow);
     border-radius: 2.5rem;
     background-color: #fff;
-    
+    margin-top: 20px;
 }
 
 .is-active{
@@ -99,7 +113,7 @@ h4{
 
 
 
-/* コンテンツTOPタイトル */
+/* コンテンツTOPタイトル⇒日本語＋英語のふちデザイン */
 
 .Group-profile-table{
     padding: 0 100px ;
@@ -115,7 +129,7 @@ h4{
     position: absolute;
     top: 0%;
     left: 0%;
-    transform: translateY(-60%);
+    transform: translate(60%,50%);
     font-size: 50px;
     font-weight: bold;
     -webkit-text-stroke-width: .5px;
@@ -130,18 +144,19 @@ h4{
 
 .cont-top-tittles-inner h3 {
     line-height: 0.8;
+    font-weight: bold;
+    font-size: 24px;
 
 }
 
 /* 基本情報　表 */
  /* 表で使用するテキストサイズ */
 .basic-info-tittle{
-    font-weight: bold;
     width: 8rem;
 }
 
 .info-p{
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .small-text{
@@ -153,15 +168,22 @@ h4{
     margin-top: 2rem;
 }
 
-/* ABOUTページ遷移（共通） */
+/* フッター上のABOUTページ遷移（共通） */
+
+.ap-page-top{
+    text-align: center;
+}
+
 .about-pagelinks{
+    margin: 0 auto;
     margin-top: 5rem;
     display: flex;
     flex-wrap: wrap; 
     gap:5rem;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0px 100px 100px;
     text-align: center;
+    width: 1200px;
 }
 
 .about-pagelink{
@@ -202,31 +224,11 @@ h4{
         display: none;
     }
     
-    /* 追従エントリーボタン */
-    .entry-btn{
-        /* position: fixed; */
-        bottom: 8%;
-        right: 25%;
-        /* display: inline-block; */
-        width: 70px;
-        height: 70px;
-        /* background-color: var(--red);
-        text-align: center;
-        border-radius: 50%;
-        box-shadow: 0px 3px 6px rgba(0,0,0,0.25);
-        z-index: 1000; */
-    }
-    
    
-    .entry-btn img{
-        width: 40px;
-        /* vertical-align: middle;
-        margin-top: 6px; */
-    }
     
-        /* about us 位置調整 */
+        /* about us 学生団体「TRing」についての位置調整 */
     .cont-h-outers{
-        height: 120px;
+        height: 50px;
         /* position: relative; */
     }
     /* .cont-h {
@@ -238,7 +240,7 @@ h4{
     } */
     .cont-h-outer.cont-h-sec-about {
         position: absolute;
-        bottom: 50%;
+        bottom: -30%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -246,8 +248,12 @@ h4{
     .cont-h-bg{
         font-size: 4.6rem;
     }
-    /* 
-    .cont-h-inner-about {
+    .cont-h img {
+        width: 100%;
+        margin-top: -8%;
+    }
+    
+    /* .cont-h-inner-about {
         position: absolute;
         top: 40%;
         left: 50%;
@@ -270,29 +276,36 @@ h4{
     }
     
     /* about タブ設定 */
-    .aboutTab{
-        margin-top: 1rem;
+    .content-second{
+        padding: 0 30px;
+        margin-top: 50px;
     }
     
     .aboutTabLists{
         /* display: flex; */
         flex-wrap: wrap; 
-        padding-bottom: 2.5rem;
-        /* border-bottom: solid 3.5px var(--yellow);
-        justify-content: space-between; */
+        padding-bottom: 2rem;
+        /* border-bottom: solid 3.5px var(--yellow); */
+        justify-content: space-between;
+        gap:15px 0px ;
+    }
+    .aboutTabLists li{
+        width: 50%;
+        text-align: center;
     }
     
     .aboutTab{
         display: inline-block;
-        width: 9.6rem;
+        width: 10rem;
         /* text-align: center; */
         font-size: .9rem;
         /* font-weight: 500; */
-        padding: 0.5rem 0rem ;
+        padding: 0.6rem 0rem ;
         /* border: solid 1px var(--yellow);
         border-radius: 2.5rem;
         background-color: #fff; */
-        
+        margin-top: 0rem;
+
     }
     
     /* .is-active{
@@ -303,12 +316,12 @@ h4{
     /* コンテンツTOPタイトル */
     
     .Group-profile-table{
-        padding: 0px ;
+        padding: 0px  0px;
     }
     
     .cont-top-tittles {
         position: relative;
-        margin-left: 0px;
+        padding-left: 0px;
 
     }
     
@@ -316,7 +329,7 @@ h4{
         position: absolute;
         top: 0%;
         left: 0%;
-        transform:translateY(-60%) ;
+        transform:translate(0%,75%) ;
         font-size: 40px;
         white-space: nowrap;
         width: 100%;
@@ -334,11 +347,11 @@ h4{
     /* 追従エントリーボタン */
 .entry-btn{
     /* position: fixed; */
-    bottom: 4%;
+    bottom: 50%;
     right: 8%;
     /* display: inline-block; */
-    width: 70px;
-    height: 70px;
+    width: 37px;
+    height: 37px;
     /* background-color: var(--red);
     text-align: center;
     border-radius: 50%;
@@ -347,9 +360,9 @@ h4{
 }
 
 .entry-btn img{
-    width: 38px;
+    width: 50px;
     /* vertical-align: middle; */
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 h4{
@@ -365,7 +378,7 @@ h4{
 }
 
 .info-p{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     
 }
@@ -386,20 +399,20 @@ h4{
 
     /* ABOUTページ遷移（共通） */
 .about-pagelinks{
-    margin: 3.7rem 10px 0px;
     /* display: flex; */
     flex-flow: column;
-    padding: 0px;
+    padding: 0px 0px 70px;
     gap:35px;
     /* text-align: center; */
     /* border-top: solid 0.5px var(--gray);
     padding: 0;
     padding-top: 80px; */
+    width: 100%;
 }
 
 
 .about-pagelink{
-    width: 100%;
+    width: 310px;
     height: 185px;
     /* overflow: hidden;
     position: relative;
