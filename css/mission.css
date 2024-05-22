@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* コンテンツTOPタイトル */
+.cont-top-tittle{
+    transform: translate(38%,50%);
+}
+/* ----------------------------- */
+.basic-informations{
+    margin-top: 2.5rem;
+    padding-left: 140px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
+}
+
+.mission-title{
+    width: 240px;
+}
+
+.basic-informations:nth-of-type(n+2){
+    margin-top: 6.25rem;
+}
+
+.basic-informations:last-of-type{
+    border-bottom: solid 0.5px var(--gray);
+    padding-bottom: 7.5rem;
+}
+
+.basic-information{
+    flex-grow: 2;
+}
+
+.basic-info{
+    display: flex;
+    border-bottom: solid 0.5px var(--gray);
+    padding: 1.2rem 0;
+}
+
+.basic-info:nth-child(n+2){
+    margin-top: 1.8rem;
+}
+
+.basic-info:last-of-type{
+    border-bottom: none;
+}
+
+.basic-info-cont{
+    margin-left: 2rem;
+    position: relative;
+}
+
+
+.basic-info-cont p:nth-child(n+2) {
+    margin-top: 2.5rem;
+}
+
+.basic-informations h4{
+    font-size: 20px;
+}
+
+.mission-title span{
+    font-weight: 400;
+}
+
+.basic-info-cont p{
+    margin-top: 0rem;
+}
+
+
+
+.position1{
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    width: 10rem;
+}
+
+
+/* ------------------
+ABOUT スマホ 
+---------------------*/
+
+@media screen and (max-width: 767px){
+    
+    .cont-top-tittle{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform:translate(0%,80%) ;
+        font-size: 40px;
+        white-space: nowrap;
+        width: 100%;
+        /* text-align: center; */
+        /* font-weight: bold;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: var(--gray);
+        color: rgba(0,0,0,0); */
+    }
+    .cont-top-tittles-inner h3{
+        text-align: center;
+    }
+
+
+/* ----------------------------- */
+.basic-informations{
+    margin-top: 2.5rem;
+    padding-left: 0.6px;
+    display: block;
+    /* border-bottom: solid 0.5px var(--gray);
+    width: 100%; */
+}
+
+.basic-informations:nth-of-type(n+2){
+    margin-top: 3.7rem;
+}
+
+.basic-informations h4{
+    font-size: 18px;
+}
+
+.mission-title span{
+    font-weight: bold;
+}
+/* .basic-information{
+    flex-grow: 2;
+} */
+
+.basic-info{
+    display: flex;
+    border-bottom: solid 0.5px var(--gray);
+    padding: 1.2rem 0;
+    position: relative;
+}
+
+.basic-info:nth-child(n+2){
+    margin-top: 3.7rem;
+}
+
+.basic-info:last-of-type{
+    border-bottom: none;
+}
+
+.basic-info-cont{
+    position:relative;
+    margin-left: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.position1{
+    width: 120px;
+}
+
+.position2{
+    position: absolute;
+    bottom:30%;
+    right: -30%;
+    width: 17.5rem;
+}
+
+.basic-info-cont p{
+    margin-top:25px;
+    font-size: 0.87rem;
+}
+
+
+}
+/*↑ スマホレスポンシブ閉じ */
