@@ -1,0 +1,216 @@
+/* about us 位置調整 */
+.cont-h-outers{
+    height: 200px;
+    position: relative;
+    }
+.cont-h {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    position: relative;
+    height: auto;
+    }
+.cont-h img {
+    width: 100%;
+    height:330px;
+    object-fit: cover;
+}
+.cont-h-outer.cont-h-sec-about {
+    position: absolute;
+    bottom: 25%;
+    left: 8%;
+    }
+.cont-h-inner-about {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    font-style: italic;
+    text-align: center;
+    white-space: nowrap;
+    }
+.cont-h-inner-about h1 {
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 0.8;
+    }
+.content-second {
+    margin-top: 0;
+    padding: 0 100px 100px 100px;
+}
+/* コンテンツTOPタイトル */
+.cont-top-tittles {
+    position: relative;
+    margin: 5rem 0 0 225px;
+    }
+.cont-top-tittle{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    font-size: 3rem;
+    font-weight: bold;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: var(--gray);
+    color: rgba(0,0,0,0);
+    }
+
+.Group-profile-table ul{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 46px;
+    border-bottom: solid 3.5px var(--yellow);
+}
+.Group-profile-table ul li{
+    margin-left: 13px;
+    padding: 14px 30px;
+    font-size: 22px;
+    font-weight: bold;
+    border: solid 1px var(--yellow);
+    border-radius: 29px;
+}
+.cont-top-tittles-inner {
+    transform: translateY(-50%);
+}
+@media (hover: hover){
+.business-content:hover {
+    background-color: var(yellow);
+}
+}
+/* グレー線 */
+.cont-separate {
+    border-top: 1px solid var(--gray);
+    margin: 45px 100px 0;
+}
+.cont-end {
+    margin-top: 80px;
+}
+/* 内容 */
+.content-cen {
+    margin: 120px 100px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 90px 70px;
+}
+.content-cen-ttl {
+    margin: 20px 0 0 225px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content-grid {
+    width: 440px;
+}
+.content-grid img {
+    width:440px;
+    margin-top: 20px;
+    box-shadow: 10px 11px 0px 0 #FDF1A9;
+    border-radius: 5px;
+}
+.content-grid h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.content-grid p {
+    height: 90px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+
+
+/*  header タブレット　--------------
+---------------------------*/
+@media screen and (max-width: 1024px){
+}
+
+/* header スマホ　--------------
+---------------------------*/
+@media screen and (max-width: 767px){
+
+/* 共通トップ～黄色線まで */
+    .content-second {
+        margin-top: 0;
+        padding: 0 15px 30px;
+    }
+    .cont-h-outer.cont-h-sec-about {
+        bottom: 35%;
+        left: 10%;
+        }
+    .cont-h-outers{
+        height: 100px;
+        position: relative;
+        }
+    .cont-h-inner-about h1 {
+        font-size: 27px;
+        line-height: 0.5;
+        }
+    .cont-h-inner-about span {
+        font-size: 10px;
+        }
+    .Group-profile-table ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .Group-profile-table ul li{
+        margin: 0 0 10px 20px;
+        padding: 7px 25px;
+        font-size: 15px;
+        font-weight: bold;
+        border: solid 1px var(--yellow);
+        border-radius: 29px;
+    }
+/* コンテンツTOPタイトル */
+    .cont-top-tittle{
+        bottom: 35%;
+        left: 22.5%;
+        font-size: 40px;
+
+    }
+    .content-cen-ttl {
+        margin-top: 40px;
+        padding: 0 25px;
+        font-size: 14px;
+    }
+/* グレー線 */
+    .cont-separate {
+        margin: 20px 25px 0;
+    }
+
+/* 業務内容 */
+
+.content-cen {
+    padding: 20px 15px 0;
+    margin: 0;
+    gap: 60px 0;
+
+}
+.content-grid {
+    width: 320px;
+}
+.content-grid img {
+    width:320px;
+    margin-top: 25px;
+}
+.content-grid h2 {
+    font-size: 18px;
+    padding: 0 10px;
+}
+.content-grid p {
+    height: 90px;
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+.cont-top-tittles {
+    margin: 5rem 0 0;
+    }
+.content-cen-ttl {
+    margin: 20px 0 0;
+}
+.content-cen {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
