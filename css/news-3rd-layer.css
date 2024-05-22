@@ -1,0 +1,133 @@
+/* ニュース第3階層のトップ画像 */
+
+/*背景画像の設定をする*/
+.cont-h-overView{
+    width: 100%;
+    background: url(../img/news-3rd-layer/DSC03137.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    overflow: hidden;/*ブラー効果でボヤけた部分を非表示*/
+}
+/*:beforeにぼかし効果を設定する*/
+.cont-h-overView:before{
+    width: 100%;
+    padding: 0 300px;
+    content: '';
+    background: inherit;/*.bgImageで設定した背景画像を継承する*/
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    position: absolute;
+    /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;/*重なり順序を一番下にしておく*/
+}
+.cont-h-overView img{
+    /* width: 1150px; */
+    height: 474px;
+    object-fit: cover;
+    object-position: center top;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 34px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+/* 内容 */
+.news-content {
+    margin: 30px 300px;
+}
+.news-p {
+    display: flex;
+}
+.date {
+    margin-left: .5rem;
+    font-size: 16px;
+    color: #afafaf;
+}
+.news-tag {
+    margin-left: 40px;
+    padding: 3px 20px;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 11px;
+}
+.news-3rd-layer-ttl {
+    margin-top: 50px;
+    font-size: 27px;
+    font-weight: bold;
+}
+.news-3rd-layer-subttl {
+    margin-top: 30px;
+    font-size: 1rem;
+}
+.hr-news {
+    margin-top: 50px;
+    border: none;
+    border-top: 1px solid var(--gray);
+}
+.president-int {
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.banner-parents {
+    text-align: center;
+}
+.president-int-banner {
+    display: inline-block;
+}
+.president-int-banner img {
+    margin: 50px 0 30px;
+    width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 0px 0 #B6EAEE;
+}
+
+/* header スマホ　--------------
+---------------------------*/
+@media screen and (max-width: 767px){
+    .news-3rd-layer-inner {
+        padding: 15px;
+    }
+/* 内容 */
+    .news-content {
+        padding: 0 15px;
+    }
+    .date {
+        margin-left: 6px;
+        font-size: 14px;
+    }
+    .news-tag {
+        margin-left: 1.5rem;
+        font-size: 10px;
+    }
+    .news-3rd-layer-ttl {
+        margin-top: 30px;
+        font-size: 22px;
+    }
+    .news-3rd-layer-subttl {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    .hr1 {
+        margin-top: 50px;
+    }
+    .president-int {
+        margin-top: 50px;
+        font-size: 18px;
+    }
+    .president-int-banner img {
+        margin: 30px 0 35px;
+        box-shadow: 3px 4px 0 0 #B6EAEE;
+    }
+}
