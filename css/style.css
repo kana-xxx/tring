@@ -17,7 +17,19 @@ img {
 	vertical-align: bottom;
 }
 
+@media screen and (min-width: 1600px){ 
+    body {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
 
+@media screen and (max-width: 767px){
+    body {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
 
 /* ------------------
 すべてのページで統一する設定 
@@ -45,6 +57,7 @@ html.is-active {
     overflow: hidden;
 }
 
+
 /* ------------------
 header
 --------------------*/
@@ -52,7 +65,7 @@ header
     background-color: var(--white);
     height: 67px;
     width: 100%;
-    padding: 13px 100px 10px 20px;
+    padding: 13px 100px 10px 35px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,6 +83,9 @@ header
 }
 .header-logo {
     flex: 1;
+}
+.header-logo a > img {
+    width: 8rem;
 }
 .header-logo a:hover {
     opacity: .6;
@@ -130,13 +146,13 @@ header
         transform: scaleX(0);
 	}
 	100% {     
-        transform: scaleX(100%);
+        transform: scaleX(1);
 	}
 }
 
 @keyframes out-line {
 	0% {
-        transform: scaleX(100%);
+        transform: scaleX(1);
 	}
 	100% {     
         transform: scaleX(0);
@@ -158,24 +174,29 @@ header
         display: none;
         height: 48px;
         width: 100%;
-        padding: 6.5px 22px 6.5px 0;
+        padding: 7.5px 22px 6.5px 22px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         box-shadow: 0 3px 6px rgba(0,0,0,.16);
-        position: sticky;
+        background: var(--white);
+        position: relative;
         top: 0;
         left: 0;
         z-index: 100;
+        text-align: center;
     }
 
     .header-logo {
         flex: auto;
     }
-    .header-logo img {
-        width: 110px;
+    .header-logo a > img {
+        width: 100px;
     }
 
+    #header ul > li:first-child {
+        padding: 0;
+    }
     #hamburger {
         display: block;
     }
@@ -186,29 +207,29 @@ header
         height: 8px;
 
     }
-    #hamburger span {
+    #hamburger .ham-line > span {
         display: block;
         background-color: var(--black);
         height: 1.5px;
         width: 100%;
     }
-    #hamburger span:first-child {
+    #hamburger .ham-line > span:first-child {
         position: absolute;
         top: 0;
         left: 0;
         transform: translateY(0);
-        /* transform-origin: left 20%; */
+
     }
     #hamburger .js-rotateMiddle {
         position: absolute;
         top: 50%;
         left: 0;
         transform: translateY(-50%);
-        /* transform-origin: left; */
+
         display: none;
    
     }
-    #hamburger span:last-child {
+    #hamburger .ham-line > span:last-child {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -253,20 +274,65 @@ header
     #hamMenu.is-active {
         display: block;
     }
+
     #hamMenu {
         background-color: var(--white);
         width: 100%;
         height: 100vh;
-        position: fixed;
-        top: 48px;
+        margin-top: 80px;
+        position: absolute;
+        top: 0;
         left: 0;
-        padding: 30px 10px 30px;
-          -webkit-overflow-scrolling: touch;
+        padding: 0px 40px 30px;
+        overflow-y: scroll;
+          /* -webkit-overflow-scrolling: touch; */
+          z-index: -1;
     }
 
     #hamMenu nav > ul {
         display: flex;
         flex-direction: column;
+    }
+    #hamMenu li {
+        width: 100%;
+        text-align: left;
+        padding: 34px 0 0;
+        font-size: 23px;
+        font-style: italic;
+    }
+
+    #hamMenu li a > span {
+        margin-left: 1rem;
+        font-size: .7rem;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    #hamMenu .about-link > li {
+        margin-left: 1rem;
+        font-size: .7rem;
+        font-weight: bold;
+        font-style: normal;
+        padding: 20px 0 0;
+    }
+
+    #hamMenu .contact-box {
+        margin-top: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        column-gap: 2rem;
+    }
+
+    #hamMenu .contact-icon {
+        width: 1.8rem;
+        height: auto;
+    }
+
+    #hamMenu .hamBottom-btn {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
     }
   
 }
@@ -294,7 +360,7 @@ footer
     width: 100%;
     background-color: var(--black);
     position: absolute;
-    bottom: 0;
+    bottom: -1%;
     left: 0;
 }
 
@@ -303,6 +369,9 @@ footer
 }
 .footer-logo a:hover {
     opacity: .6;
+}
+.footer-logo a > img {
+    width: 8rem;
 }
 #footer nav {
     flex: 1;
@@ -318,6 +387,7 @@ footer
     height: 100%;
     padding: 15px 10px;
     cursor: pointer;
+    position: relative;
     font-size: 23px;
 }
 
@@ -333,10 +403,40 @@ footer
     justify-content: space-between;
 }
 #footer .content-bottom p {
-    font-size: 14px;
+    text-decoration: underline;
+    font-size: 80%;
 }
 #footer .content-bottom p:hover {
     color: var(--red);
+}
+
+#footer ul > .line-out::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: var(--red);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: out-line .25s ease-in forwards;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+#footer ul > .active-line::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: var(--red);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: stretch-line .25s ease-in forwards;
+    transform-origin: left;
+}
+#footer ul > li a {
+    display: block;
 }
 
 /* ------------------
@@ -358,8 +458,8 @@ footer スマホ
         justify-content: space-between;
         position: relative;
     }
-    .footer-logo img{
-        width: 160px;
+    .footer-logo a > img {
+        width: 110px;
     }
     #footer nav > ul {
         display: flex;
@@ -426,7 +526,11 @@ content見出し
 }
 .cont-h-bg-bk {
     color: var(--black);
-    opacity: .5;
+    opacity: .3;
+}
+.cont-h-bg-w {
+    color: var(--white);
+    opacity: .3;
 }
 
 .cont-h-inner {
@@ -465,11 +569,10 @@ content見出し スマホ
         transform: translateX(-50%);
     }
     .cont-h-bg {
-        opacity: .6;
         font-family: "Source Code Pro", monospace;
         font-style: italic;
         font-weight: bold;
-        font-size: 75px;
+        font-size: 65px;
         position: relative;
     }
     .cont-h-inner {
@@ -490,6 +593,7 @@ content見出し スマホ
         font-size: 10px;
     }
 }
+
 
 /* ------------------
 
