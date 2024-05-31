@@ -159,6 +159,47 @@ header
 	}
 }
 
+.hover-animation-add {
+    /*追加*/
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    transform: translateY(150px);
+}
+.is-active-hover {
+    /*要素を表示させる*/
+    opacity: 1;
+    visibility: visible;
+    /*元の位置に戻す*/
+    transform: translateY(0);
+}
+
+.hover-animation-stay {
+    /*追加*/
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+.is-active-stay {
+    /*要素を表示させる*/
+    opacity: 1;
+    visibility: visible;
+}
+
+.hover-animation-main {
+    /*追加*/
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    transform: translateY(150px);
+}
+.is-active-main {
+    /*要素を表示させる*/
+    opacity: 1;
+    visibility: visible;
+    /*元の位置に戻す*/
+    transform: translateY(0);
+}
 
 /*  header タブレット　--------------
 ---------------------------*/

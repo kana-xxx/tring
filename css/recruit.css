@@ -161,17 +161,8 @@
 
 /* ABOUTページ遷移（共通） */
 .about-pagelinks{
-    margin: 5rem 100px 0rem;
-    /* margin: 5rem 100px 0px; */
-    /* display: flex;
-    flex-wrap: wrap; 
-    gap:5rem; */
-    /* justify-content: space-around; */
-    /* text-align: center; */
     border-top: solid 0.5px var(--gray);
-    /* padding: 0 100px 100px; */
     padding-top: 80px;
-
 }
 
 @media (hover: hover) {
@@ -179,11 +170,6 @@
         opacity: 0.5;
     }
 }
-
-
-
-
-
 /* ------------------
 ABOUT スマホ 
 ---------------------*/
@@ -261,11 +247,6 @@ ABOUT スマホ
 .basic-info-cont{
     margin-left: 2rem;
     display: block;
-}
-
-.basic-info-cont img{
-    /* margin-left:-5% ; */
-
 }
 
 .basic-info-cont iframe{

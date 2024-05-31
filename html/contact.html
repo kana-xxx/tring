@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_TRing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<!--　CSSの読み込みは下記  -->
+    <!-- リセットCSSの読み込み -->
+    <link rel="stylesheet" href="../css/destyle.css">
+    <!-- style CSSの読み込み -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header">
+            <div class="header-logo">
+                <a href="#"><img src="../img/TRing-logo.svg" alt="ロゴデータ"></a>
+    
+            </div>
+            <nav>
+                <ul>
+                    <li class="js-line"><a href="#">TOP</a></li>
+                    <li class="js-line"><a href="#">ABOUT</a></li>
+                    <li class="js-line"><a href="#">WORKS</a></li>
+                    <li class="js-line"><a href="#">NEWS</a></li>
+                    <li class="js-line"><a href="#">VOICE</a></li>
+                    <li class="js-line"><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger">
+                <div class="ham-line">
+                <span class="hamTop"></span>
+                <span class="hamMiddle"></span>
+                <span class="hamBottom"></span>
+                </div>
+    
+                <div id="hamMenu">
+                    <nav>
+                        <ul>
+                            <li><a href="">TOP</a></li>
+                            <li><a href="">ABOUT</a></li>
+                            <li><a href="">WORKS</a></li>
+                            <li><a href="">NEWS</a></li>
+                            <li><a href="">VOICE</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="contact">
+<!-- タイトル -->
+            <section class="section sec-about" id="about"> 
+                <div class="cont-h-outer cont-h-fir">
+                    <span class="cont-h-bg-fir">CONTACT</span>
+                    <div class="cont-h-inner inner-fir cont-h-bk">
+                        <h1>CONTACT</h1>
+                        <span>お問い合わせ</span>
+                    </div>
+                </div>
+<!-- テキスト -->
+                <div class="content-about">
+                    長期インターンへのご応募、TRingに関するご質問は、<br>以下のフォームからお問い合わせください。
+                </div>
+            </section>
+<!-- ラジオボタンヨコ -->
+<div class="Form">
+    <div class="Form-Item">
+        <p class="Form-Item-Label">
+        <span class="Form-Item-Label-Required">必須</span>属性</p>
+        <ul class="radio-btn">
+        <li><input  class="visually-hidden" type="radio" name="type" id="student"/>
+        <label for="student">学生</label></li>
+        <li><input class="visually-hidden" type="radio" name="type" id="company"/>
+        <label for="company">企業</label></li>
+        <li><input class="visually-hidden" type="radio" name="type" id="other" />
+        <label for="other">その他</label></li>
+        </ul>
+    </div>
+<!-- ラジオボタンタテ -->
+    <div class="Form-Item">
+        <p class="Form-Item-Label">
+        <span class="Form-Item-Label-Required">必須</span>目的</p>
+        <ul class="radio-btn-column">
+        <li><input  class="visually-hidden" type="radio" name="purpose" id="apply"/>
+        <label for="apply">長期インターンへのご応募</label></li>
+        <li><input class="visually-hidden" type="radio" name="purpose" id="relation"/>
+        <label for="relation">「TRing」に関して</label></li>
+        <li><input class="visually-hidden" type="radio" name="purpose" id="relation-president" />
+        <label for="relation-president">「社長に面接してみた」に関して</label></li>
+        <li><input class="visually-hidden" type="radio" name="purpose" id="purpose-other" />
+        <label for="purpose-other">その他</label></li>
+        </ul>
+    </div>
+<!-- 記述 -->
+    <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>お名前</p>
+        <input type="text" class="Form-Item-Input" placeholder="山田太郎">
+    </div>
+    <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>団体名／企業名</p>
+        <input type="text" class="Form-Item-Input" placeholder="○○大学／○○株式会社">
+    </div>
+<!-- ラジオボタンヨコ※任意タグ -->
+    <div class="Form-Item">
+        <p class="Form-Item-Label">
+        <span class="Form-Item-Label-Optional">任意</span>連絡方法</p>
+        <ul class="radio-btn">
+        <li><input  class="visually-hidden" type="radio" name="type" id="student"/>
+        <label for="mail">メール</label></li>
+        <li><input class="visually-hidden" type="radio" name="type" id="company"/>
+        <label for="telphone">電話</label></li>
+        <li><input class="visually-hidden" type="radio" name="type" id="other" />
+        <label for="both">どちらでも構わない</label></li>
+        </ul>
+    </div>
+<!-- お問い合わせ（記述ボックス） -->
+    <div class="Form-Item">
+        <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+        <textarea class="Form-Item-Textarea" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+    </div>
+<!-- 確認ボタン -->
+    <div class="Btn-outer">
+        <input type="submit" class="Form-Btn" value="入力内容を確認  >">
+    </div>
+  </div>
+        </main>
+    </body>
+</html>

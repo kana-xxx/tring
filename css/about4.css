@@ -15,6 +15,11 @@ h4{
     font-weight: bold;
 }
 
+/* スマホ版に追加している<br>をPCサイズで非表示 */
+.spBr {
+    display: none;
+}
+
 /* 追従エントリーボタン */
 .entry-btn{
     position: fixed;
@@ -29,9 +34,6 @@ h4{
     box-shadow: 0px 3px 6px rgba(0,0,0,0.25);
     z-index: 1000;
 }
-
-
-
 .entry-btn img{
     width: 55px;
     vertical-align: middle;
@@ -107,11 +109,9 @@ h4{
     margin-top: 20px;
 }
 
-.is-active{
+.aboutTab.is-active{
     background-color: var(--yellow);
 }
-
-
 
 /* コンテンツTOPタイトル⇒日本語＋英語のふちデザイン */
 
@@ -136,10 +136,6 @@ h4{
     -webkit-text-stroke-color: var(--gray);
     color: rgba(0,0,0,0);
     z-index: -2;
-}
-
-.cont-top-tittles-inner {
-    /* transform: translateY(-50%); */
 }
 
 .cont-top-tittles-inner h3 {
@@ -176,7 +172,7 @@ h4{
 
 .about-pagelinks{
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap; 
     gap:5rem;
@@ -192,23 +188,36 @@ h4{
     overflow: hidden;
     position: relative;
     border-radius: 5px;
+    box-shadow: 0px 3px 6px#CECECE ;
+    
 }
 
 .pagelink-text{
     position: absolute;
-    bottom: 10%;
-    left: 8%;
-    color: #fff;
+    height: 60px;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    margin: auto;
+    padding-top:15px;
+    color: #000;
     z-index: 10;
     font-weight: bold;
-    font-size: 1.06rem;
+    font-size: 1.25rem;
+    background-color: #fff;
 }
 
 @media (hover: hover) {
+    .about-pagelink :hover {
+        opacity:0.5;
+        transition: 0.25s;
+    }
     .about-pagelink img:hover{
         scale: 1.1;
     }
-
+    .pagelink-image :hover {
+        opacity: 1;
+    }
     .entry-btn:hover{
         scale: 1.1;
     }
@@ -224,7 +233,15 @@ h4{
         display: none;
     }
     
-   
+    /* PC版に追加していた<br>をスマホ版で削除 スマホで追加したい<br>を表示
+    */
+    .pcBr {
+        display: none;
+        
+    }
+    .spBr {
+        display: block;
+    }
     
         /* about us 学生団体「TRing」についての位置調整 */
     .cont-h-outers{
@@ -427,6 +444,7 @@ h4{
     color: #fff;
     z-index: 10; */
     /* font-weight: bold; */
+    height: 50px;
     font-size: 14px;
 }
 

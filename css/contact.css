@@ -1,0 +1,266 @@
+/* スマホ版に追加している<br>をPCサイズで非表示 */
+.spBr {
+    display: none;
+}
+/* ----------------------------------------------- */
+
+.sec-about {
+    text-align: center;
+}
+.cont-h-outer.cont-h-fir {
+    display: inline-block;
+    position: relative;
+}
+.cont-h-bg-fir {
+    position: relative;
+    width: 100%;
+    color: #d9d9d9;
+    font-family: "Source Code Pro", monospace;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 180px;
+}
+.cont-h-inner-fir {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    font-style: italic;
+    text-align: center;
+}
+
+.cont-h-w {
+    color: #FFF;
+}
+
+.cont-h-bk {
+    color: #000;
+}
+
+.content-second{
+    margin-top: 0px;
+    padding: 0 100px ;
+}
+.content-outer {
+    margin-top: 350px;
+    padding:  0 100px  0 100px;
+}
+.content-about {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* フォーム */
+.Form {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+.Form-Item:not(:first-child) {
+    padding-top: 40px;
+    width: 100%;
+}
+.Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+
+.Form-Item-Label-Required {
+    text-align: center;
+    margin-right: 10px;
+    padding:2px 7px;
+    width: 48px;
+    background-color:var(--red);
+    color: #FFF;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    border: solid 1px var(--red);
+}
+.Form-Item-Label-Optional {
+    text-align: center;
+    margin-right: 10px;
+    padding:2px 7px;
+    width: 48px;
+    background-color:#FFF;
+    color:var(--red);
+    font-size:1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    border: solid 1px var(--red);
+}
+  .Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .Form-Item-Textarea {
+    resize: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .Form-Btn {
+    display: inline-block;
+    width: 15rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: solid 1px var(--red);
+    border-radius: 2.5rem;
+    background-color: #fff;
+  }
+
+  .Btn-outer {
+    margin: 75px 0 170px;
+    width: 100%;
+    text-align: center;
+  }
+
+/* ラジオボタン */
+.radio-btn {
+    display: flex;
+    column-gap: 25px;
+    margin-top: 20px;
+}
+.radio-btn-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-top: 20px;
+}
+  label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 35px;
+  }
+
+  label::before,
+  label::after {
+    content: "";
+    display: block; 
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  
+  label::before {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: 2.5px;
+  }
+  
+  label::after {
+    background-color: #000;
+    border-radius: 50%;
+    opacity: 0;
+    width: 11px;
+    height: 11px;
+    left: 7px
+  }
+  
+  input:checked + label::after {
+    opacity: 1;
+  }
+  
+  .visually-hidden {
+   position: absolute;
+   white-space: nowrap;
+   border: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   overflow: hidden;
+   height: 1px;
+   width: 1px;
+   margin: -1px;
+   padding: 0;
+  }
+/*ーーーーーーーーーーーーーースマホ ーーーーーーーーーーーーーーーーーーーーー */
+
+@media screen and (max-width: 767px){
+
+/* PC版に追加していた<br>をスマホ版で削除 スマホで追加したい<br>を表示*/
+    .pcBr {
+        display: none;
+        
+    }
+    .spBr {
+        display: block;
+    }
+    .contact {
+        padding: 0 30px;
+    }
+    .cont-h-outer.cont-h-fir {
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+    .Form-Item-Label-Required {
+        font-size: 14px;
+    }
+    .Form-Item-Label-Optional {
+        font-size: 14px;
+    } 
+    .cont-h-bg-fir {
+        font-size: 75px;
+    }
+    .Form-Btn {
+        font-size: 14px;
+    }
+    .Form-Item-Input {
+        font-size: 14px;
+    }
+    .Form-Item-Label {
+        font-size: 14px;
+    }
+    .Form-Item-Textarea {
+        font-size: 14px;
+        height: 169px;
+    }
+    #insta .cont-h-outer.cont-h-fir {
+        margin-left: calc(((100vw - 100%) / 2) * -1);
+        margin-right: calc(((100vw - 100%) / 2) * -1);
+    }
+    .top-page {
+        overflow: hidden;
+    }
+    .content-outer {
+        margin-top: 700px;
+        padding:  0 2.5rem 0;
+    }
+    .radio-btn {
+        column-gap: 15px;
+    }
+    .radio-btn-column {
+        row-gap: 15px;
+    }
+    label {
+        padding-left: 25px;
+    } 
+    }
+
