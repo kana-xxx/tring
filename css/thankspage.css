@@ -1,0 +1,44 @@
+.Btn-outer-thanks {
+    margin-top: 30px;
+}
+.Btn-outer-thanks-top {
+    margin-top: 75px;
+}
+.blue {
+    display: inline-block;
+    width: 15rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: solid 1px var(--blue);
+    border-radius: 2.5rem;
+    background-color: #fff;
+}
+.instagram-btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 10px;
+    margin: 30px 0 170px;
+}
+.instagram-icon {
+    width:35px;
+}
+.instagram-text {
+    font-size: 14px;
+    text-decoration:underline;
+    margin-bottom: 10px;
+}
+.space {
+    margin: 30px;
+}
+.content-about-outer {
+    display: flex;
+    flex-direction: column;
+}
+.content-about-ttl {
+    margin-top: 45px;
+    font-size: 1rem;
+    font-weight: bold;
+}

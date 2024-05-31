@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_Tring</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<!--　CSSの読み込みは下記  -->
+    <!-- リセットCSSの読み込み -->
+    <link rel="stylesheet" href="../css/destyle.css">
+    <!-- style CSSの読み込み -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/contact-confirm.css">
+
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header">
+            <div class="header-logo">
+                <a href="#"><img src="../img/TRing-logo.svg" alt="ロゴデータ"></a>
+    
+            </div>
+            <nav>
+                <ul>
+                    <li class="js-line"><a href="#">TOP</a></li>
+                    <li class="js-line"><a href="#">ABOUT</a></li>
+                    <li class="js-line"><a href="#">WORKS</a></li>
+                    <li class="js-line"><a href="#">NEWS</a></li>
+                    <li class="js-line"><a href="#">VOICE</a></li>
+                    <li class="js-line"><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger">
+                <div class="ham-line">
+                <span class="hamTop"></span>
+                <span class="hamMiddle"></span>
+                <span class="hamBottom"></span>
+                </div>
+    
+                <div id="hamMenu">
+                    <nav>
+                        <ul>
+                            <li><a href="">TOP</a></li>
+                            <li><a href="">ABOUT</a></li>
+                            <li><a href="">WORKS</a></li>
+                            <li><a href="">NEWS</a></li>
+                            <li><a href="">VOICE</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="contact">
+<!-- タイトル -->
+            <section class="section sec-about" id="about"> 
+                <div class="cont-h-outer cont-h-fir">
+                    <span class="cont-h-bg-fir">CONTACT</span>
+                    <div class="cont-h-inner inner-fir cont-h-bk">
+                        <h1>CONTACT</h1>
+                        <span>お問い合わせ</span>
+                    </div>
+                </div>
+<!-- テキスト -->
+                <div class="content-about">
+                    入力内容をご確認いただき、間違いがなければ<br>「送信」ボタンを押してください。
+                </div>
+            </section>
+<!-- ラジオボタン -->
+<div class="Form">
+    <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>属性</p>
+        <input  class="visually-hidden" type="radio" name="type" id="student"/>
+        <p class="student-confirm">学生</p>
+    </div>
+    <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>目的</p>
+        <input  class="visually-hidden" type="radio" name="purpose" id="apply"/>
+        <p class="apply-confirm">長期インターンへのご応募</p>
+    </div>
+    <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>お名前</p>
+        <p class="Form-Item-Input-confirm">山田太郎</p>
+    </div>
+    <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>団体名／企業名</p>
+        <p class="Form-Item-Input-confirm">○○大学</p>
+    </div>
+    <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Optional">任意</span>連絡方法</p>
+        <input class="visually-hidden" type="radio" name="type" id="other" />
+        <p class="contact-confirm-other">どちらでも構わない</p>
+    </div>
+    <div class="Form-Item">
+        <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+        <p class="Form-Item-Textarea-confirm">長期インターンに参加したいです。</p>
+    </div>
+    <div class="Btn-outer">
+        <input type="submit" class="Form-Btn" value="送信  >">
+    </div>
+    </div>
+</main>
+</body>
+</html>
