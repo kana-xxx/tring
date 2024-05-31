@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+
+/* ----------------------------- */
+.basic-informations{
+    margin-top: 3rem;
+    padding-left: 140px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: solid 0.5px var(--gray);
+    width: 100%;
+}
+
+.basic-informations h4{
+    width: 190px;
+}
+
+.basic-information{
+    flex-grow: 2;
+}
+
+.basic-info{
+    display: flex;
+    border-bottom: solid 0.5px var(--gray);
+    padding-bottom: 30px;
+    
+}
+
+.basic-info:first-child{
+    padding-top: 8px;
+}
+
+.basic-info:nth-child(n+2){
+    margin-top: 1.8rem;
+}
+
+.basic-info:last-of-type{
+    border-bottom: none;
+}
+
+.basic-info-cont{
+    margin-left: 2rem;
+}
+
+.basic-info-cont img{
+    margin-left:-5% ;
+}
+
+.basic-info-cont iframe{
+    width: 23.75rem;
+    height: 16.875rem;
+    margin-top: 2rem;
+}
+
+.full-screen-img img{
+    margin-top: 3rem;
+}
+
+
+/* ------------------
+ABOUT スマホ 
+---------------------*/
+
+@media screen and (max-width: 767px){
+
+
+/* ----------------------------- */
+.basic-informations{
+    margin-top: 3rem;
+    padding-left: 0.6px;
+    display: block;
+    border-bottom: solid 0.5px var(--gray);
+    /* 
+    width: 100%; */
+}
+
+.basic-informations h4{
+    /* width: 140px; */
+    padding-left: 10px;
+}
+
+.basic-information{
+    /* flex-grow: 2; */
+    margin-top: 10px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.basic-info{
+    display: flex;
+    border-bottom: solid 0.5px var(--gray);
+    padding: 1.2rem 0;
+    position: relative;
+    text-align: left;
+}
+
+.basic-info > img{
+    width: 250px;
+}
+
+.basic-info:first-child{
+    padding-top: 8px;
+
+}
+
+.basic-info:nth-child(n+2){
+    margin-top: 0px;
+}
+
+.basic-info:last-of-type{
+    /* border-bottom: none; */
+    margin-top: 0px;
+}
+
+.basic-info-cont{
+    margin-left: 25px;
+    width: 100%;
+}
+
+.basic-info-cont img{
+    margin-left:-20% ;
+    width: 200px;
+
+}
+
+.basic-info-cont iframe{
+    width:14rem;
+    height: 9.8rem;
+    margin-top: 1.25rem;
+}
+
+.full-screen-img img{
+    margin-top: 1.8rem;
+}
+
+
+
+}
+/*↑ スマホレスポンシブ閉じ */

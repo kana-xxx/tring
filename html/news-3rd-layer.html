@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRing</title>
+
+      <!-- favicon/webclipicon -->
+      <!-- <link rel="icon" href="favicon.ico" />
+      <link rel="icon" href="favicon.svg" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="webclip.png" /> -->
+
+    <!--　fontの読み込みは下記  -->
+        <!-- Goggleフォントの読み込み -->
+        <!-- Noto Sans　＆Source Code Pro -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!-- Adobe フォントの読み込み -->
+    <!-- ギガ丸 -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'gor1tzx',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
+    <!--　CSSの読み込みは下記  -->
+    <!-- リセットCSSの読み込み -->
+    <link rel="stylesheet" href="../css/destyle.css">
+    <!-- style CSSの読み込み -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/news-3rd-layer.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-logo">
+            <a href="#"><img src="../img/TRing-logo.svg" alt="ロゴデータ"></a>
+
+        </div>
+        <nav>
+            <ul>
+                <li class="js-line"><a href="#">TOP</a></li>
+                <li class="js-line"><a href="#">ABOUT</a></li>
+                <li class="js-line"><a href="#">WORKS</a></li>
+                <li class="js-line"><a href="#">NEWS</a></li>
+                <li class="js-line"><a href="#">VOICE</a></li>
+                <li class="js-line"><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger">
+            <div class="ham-line">
+            <span class="hamTop"></span>
+            <span class="hamMiddle"></span>
+            <span class="hamBottom"></span>
+            </div>
+
+            <div id="hamMenu">
+                <nav>
+                    <ul>
+                        <li><a href="">TOP</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">WORKS</a></li>
+                        <li><a href="">NEWS</a></li>
+                        <li><a href="">VOICE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<!-- ここまで共通のヘッダーのため触らない -->
+
+    <main>
+        <!-- 第二階層　画像付きヘッダ- -->
+        <div class="cont-h-overView">
+            <img src="../img/news-3rd-layer/DSC03137.png" alt=""> 
+        </div>
+        <!-- ↓ 第二階層　レイアウト↓ -->
+            <div class="news-content">
+                <div class="news-p">
+                    <img src="../img/clock-icon.svg" class="clock-icon">
+                    <p class="date">2024.04.16</p>
+                    <p class="news-tag">お知らせ</p>
+                </div>
+                <p class="news-3rd-layer-ttl">タイトルタイトルタイトルタイトル</p>
+                <p class="news-3rd-layer-subttl">サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+                <hr class="hr-news">
+                <p class="president-int">社長に面接してみた</p>
+                <div class="banner-parents">
+                <div class="president-int-banner">
+                    <img src="../img/banner-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- 下記共通フッターのため触らない -->
+        <!-- Footer -->
+    <footer id="footer">
+        <div class="content-top">
+        <div class="footer-logo">
+            <a href="#"><img src="../img/TRing-logo.svg" alt="ロゴデータ"></a>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">TOP</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">WORKS</a></li>
+                <li><a href="">NEWS</a></li>
+                <li><a href="">VOICE</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+
+
+        </nav>
+    </div>
+    <div class="content-bottom">
+        <p><a href="#">Privacy Policy</a></p>
+        <small>Copyright © 2024 E-VALUE inc. All Rights Reserved.</small>
+    </div>
+    </footer>
+    
+
+    <!-- JS読み込みは下記へ -->
+    <script src="../js/header.js"></script>
+</body>
+</html>
